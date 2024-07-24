@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+// src/components/ConnectFour.js
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring';
 import Confetti from 'react-confetti';
+import './ConnectFour.css';
 
 const BoardContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   background-color: #333;
   position: relative;
@@ -48,17 +50,20 @@ const Button = styled.button`
 `;
 
 const WinnerText = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  z-index: 10;
+`;
+
+const MessageText = styled.div`
   margin-top: 20px;
   font-size: 24px;
   color: white;
-  text-align: center;
-`;
-
-const RandomPhrase = styled.div`
-  margin-top: 20px;
-  font-size: 18px;
-  color: white;
-  text-align: center;
 `;
 
 const phrases = [
@@ -142,12 +147,16 @@ const ConnectFour = () => {
   return (
     <BoardContainer>
       <div style={{ textAlign: 'center', color: 'white' }}>
-        <h1>Puissance 4 : Amusez-vous bien !</h1>
         {winner && (
           <>
             <Confetti width={window.innerWidth} height={window.innerHeight} />
-            <WinnerText>Le joueur {winner} a gagné ! 🎉</WinnerText>
-            <RandomPhrase>{winnerPhrase}</RandomPhrase>
+            <WinnerText>{winnerPhrase}</WinnerText>
+          </>
+        )}
+        <h1>Puissance 4 : Amusez-vous bien !</h1>
+        {winner && (
+          <>
+            <h2>Le joueur {winner} a gagné ! 🎉</h2>
           </>
         )}
         <Board>
@@ -172,6 +181,7 @@ const ConnectFour = () => {
             ))
           )}
         </Board>
+        <MessageText>{winnerPhrase}</MessageText>
         <Button onClick={resetGame}>Restart Game</Button>
       </div>
     </BoardContainer>

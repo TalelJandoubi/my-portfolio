@@ -1,13 +1,12 @@
 // src/components/NewPage.js
 import React from 'react';
 import ConnectFour from './ConnectFour';
-import './NewPage.css';  // Assurez-vous de créer et d'importer ce fichier CSS
 
 const NewPage = () => {
   return (
-    <div className="new-page">
-      <h1 className="main-title">Puissance 4 : Amusez-vous bien !</h1>
-      <h2 className="sub-title">Mais recrutez-moi avant ! 😉</h2>
+    <div style={{ padding: '50px', textAlign: 'center', color: 'white', fontWeight: 'bold' }}>
+      <h1 style={{ marginBottom: '50px', fontFamily: 'Arial' }}>Puissance 4 : Amusez-vous bien !</h1>
+      <h2 style={{ marginBottom: '50px', fontFamily: 'Arial' }}>Mais recrutez-moi avant ! 😉</h2>
       <ConnectFour />
     </div>
   );
