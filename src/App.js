@@ -1,20 +1,19 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
-import HomeEn from './components/HomeEn';
-import './assets/Home.css';
+import NewPage from './components/NewPage';
+import Navbar from './components/Navbar';
+import './assets/App.css';
 
 const App = () => {
   return (
     <Router>
       <div className="App">
-        <nav>
-          <Link to="/" className="nav-link">Français</Link>
-          <Link to="/en" className="nav-link">English</Link>
-        </nav>
+        <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/en" element={<HomeEn />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/newpage" element={<NewPage />} />
         </Routes>
       </div>
     </Router>

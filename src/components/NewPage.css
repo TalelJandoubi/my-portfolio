@@ -1,0 +1,15 @@
+/* NewPage.css */
+.new-page {
+  padding: 50px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.main-title,
+.sub-title {
+  font-family: 'Verdana', Arial, sans-serif;
+  margin-bottom: 50px;
+  font-size: 38px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
