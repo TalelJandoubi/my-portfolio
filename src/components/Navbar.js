@@ -2,34 +2,61 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { FaHome, FaGamepad, FaInfoCircle } from 'react-icons/fa';
 
 const NavbarContainer = styled.div`
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #444;
-  color: white;
+  background-color: #333;
   padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-const NavbarLink = styled(Link)`
-  margin: 0 15px;
-  color: white;
+const NavTitle = styled.h1`
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+`;
+
+const NavLinks = styled.div`
+  display: flex;
+  gap: 15px;
+`;
+
+const NavLink = styled(Link)`
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
+  display: flex;
+  align-items: center;
 
   &:hover {
     color: #ddd;
   }
 `;
 
+const Icon = styled.span`
+  margin-right: 8px;
+`;
+
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <NavbarLink to="/">Accueil</NavbarLink>
-      <NavbarLink to="/newpage">Puissance 4</NavbarLink>
+      <NavTitle>Mon Portfolio</NavTitle>
+      <NavLinks>
+        <NavLink to="/">
+          <Icon><FaHome /></Icon>
+          Accueil
+        </NavLink>
+        <NavLink to="/newpage">
+          <Icon><FaGamepad /></Icon>
+          Puissance 4
+        </NavLink>
+        <NavLink to="/about">
+          <Icon><FaInfoCircle /></Icon>
+          À propos
+        </NavLink>
+      </NavLinks>
     </NavbarContainer>
   );
 };
