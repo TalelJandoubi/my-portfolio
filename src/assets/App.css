@@ -1,51 +1,75 @@
-/* src/assets/App.css */
-
-/* Styles par défaut */
 body {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Styles pour les composants ConnectFour */
+.BoardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: #333;
-  color: white;
-}
-
-.container {
+  position: relative;
   padding: 20px;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 2rem;
+.Board {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-gap: 5px;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-h2 {
-  font-size: 1.5rem;
+.Cell {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
+.Cell[data-value='1'] {
+  background-color: red;
 }
 
-/* Pour les écrans de téléphone */
-@media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
+.Cell[data-value='2'] {
+  background-color: yellow;
+}
 
-  h1, h2 {
-    font-size: 1.5em;
-  }
+.Button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .board {
-    grid-template-columns: repeat(7, 40px);
-    grid-gap: 3px;
-  }
+.Button:hover {
+  background-color: #555;
+}
 
-  .cell {
-    width: 40px;
-    height: 40px;
-  }
-
-  .button {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
+.WinnerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  z-index: 10;
 }

@@ -208,9 +208,7 @@ const Home = () => {
           <div the face bottom></div>
         </div>
       </motion.div>
-      <Link to="/newpage">
-        <button style={{ padding: '10px 20px', fontSize: '16px', marginTop: '20px' }}>Aller à la Nouvelle Page</button>
-      </Link>
+      
     </Container>
   );
 };
