@@ -1,4 +1,3 @@
-// src/components/Home.js
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
@@ -28,7 +27,7 @@ const Home = () => {
                     className="link-box"
                   >
                     <a
-                      href="https://github.com/O-clock-Starship/projet-04-TCG-Vision"
+                      href="https://github.com/TalelJandoubi/my-portfolio"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="link-button"
@@ -42,7 +41,7 @@ const Home = () => {
                     className="link-box"
                   >
                     <a
-                      href="/CV_Talel20JANDOUBI_ENSITECH_BTS20SIO20SISR20_MRS-avec20compression (1) (1).pdf"
+                      href="/CV Jandoubi Talel.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="link-button"
@@ -202,8 +201,8 @@ const Home = () => {
         <div className="cube">
           <div className="face front"></div>
           <div className="face back"></div>
-          <div the face left></div>
-          <div the face right></div>
+          <div className="face left"></div>
+          <div className="face right"></div>
           <div the face top></div>
           <div the face bottom></div>
         </div>

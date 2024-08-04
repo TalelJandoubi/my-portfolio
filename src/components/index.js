@@ -1,3 +1,4 @@
+// src/components/Home.js
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
@@ -38,7 +39,7 @@ const Home = () => {
                     whileTap={{ scale: 0.9 }}
                   >
                     <Button
-                      href="/mnt/data/CV_Talel20JANDOUBI_ENSITECH_BTS20SIO20SISR20_MRS-avec20compression (1) (1).pdf"
+                      href="/CV Jandoubi Talel.pdf"
                       target="_blank"
                       variant="secondary"
                       className="ml-3 custom-button"
