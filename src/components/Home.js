@@ -120,7 +120,7 @@ const Home = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 3 }}
                   >
-                    Si vous êtes à la recherche d'un développeur passionné, créatif et compétent pour rejoindre votre équipe, n'hésitez pas à me contacter. Je suis toujours ouvert à de nouvelles opportunités et serais heureux de discuter de la manière dont je peux contribuer à vos projets.
+                    Si vous êtes à la recherche d'un développeur passionné ou d'un jeune alternant informatique qui travaillera a votre maniere afin d'apprendre et progresser dans le domaine du reseau, créatif et compétent pour rejoindre votre équipe, n'hésitez pas à me contacter. Je suis toujours ouvert à de nouvelles opportunités et serais heureux de discuter de la manière dont je peux contribuer à vos projets.
                   </motion.div>
                   <br />
                   <motion.div
