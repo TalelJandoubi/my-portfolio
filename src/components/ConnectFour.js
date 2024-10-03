@@ -70,7 +70,8 @@ const phrases = [
   "Si tu gagnes tu parles de moi au patron.",
   "😱 Félicitations tu as gagné le droit de rejouer pour voir une autre phrase.",
   "Le perdant mange un oeuf cru.",
-  "Allez tu as assez joué, retourne travailler !"
+  "Allez tu as assez joué, retourne travailler !",
+  
 ];
 
 const ConnectFour = () => {

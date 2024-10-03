@@ -41,7 +41,7 @@ const Home = () => {
                     className="link-box"
                   >
                     <a
-                      href="/CV Jandoubi Talel.pdf"
+                      href="/Cv Talel.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="link-button"
@@ -92,7 +92,7 @@ const Home = () => {
                   >
                     📚 <strong>Actuellement en BTS SIO</strong> :
                     <br />
-                    Bien que je n'aie pas encore de connaissances approfondies en systèmes et réseaux, je m'y intéresse énormément et je suis en train de me former pour développer ces compétences.
+                      Je me reoriente vers les systemes et reseaux afin d'elargir mes competences et mes connaissances. En combinant ma 
                   </motion.div>
                   <br />
                   <motion.div
